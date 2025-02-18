@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.maindiv{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgoldenrodyellow;
+    padding: 15px 20px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000px;
+}
+
+.logo{
+    color: blue;
+}
+
+.logo h1{
+    margin: 10px;
+    font-size: 25px;
+}
+
+.links{
+    display: flex;
+}
+
+.links a{
+    padding:15px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    
+    color:red
+    
+}
+
+.links a:hover{
+    color: pink;
+}
+
+
+.image{
+
+    background: url(https://thumbs.dreamstime.com/z/social-media-keyboard-creative-abstract-network-computer-internet-web-www-communication-concept-macro-view-pc-color-33718726.jpg)center/cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden;
+    position: relative; */
+
+}
+
+.sub-div{
+    text-align: center;
+    background-color: rgba(137, 43, 226, 0.693);
+    color: chartreuse;
+    padding: 20px;
+}
+
+.sub-div h2{
+    font-size: bold;
+}
+
+.sub-div p{
+    margin-top: 10px;
+    color:white;
+}
+
+.button{
+    background-color: darkblue;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.button:hover{
+    background-color: chartreuse;
+    color: blue;
+}

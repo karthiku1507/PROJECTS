@@ -1,0 +1,39 @@
+body{
+    background-color: rgba(221, 226, 230, 0.844);
+    margin: 0;
+    justify-content: center;
+    display: flex;
+   align-items: center;
+   height: 100vh;
+}
+
+#container{
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px pink;
+    text-align: center;
+}
+
+#quiz-container{
+    margin-bottom: 20px;
+}
+
+#option-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+button{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}  
+
+
+#score{
+ font-weight: bold;   
+}
