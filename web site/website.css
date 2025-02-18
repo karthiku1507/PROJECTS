@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.755);
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 20px;
+
+}
+
+.logo{
+    color: white;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+
+}
+
+.nav-links a{
+    color: white;
+  text-decoration: none;
+    padding: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover{
+    color: yellow;
+}

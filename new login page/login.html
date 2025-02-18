@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login page</title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <div class="container">
+        <form class="contect-form">
+            <h2>Contact Us</h2>
+        
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="user name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="email id">
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="subject">
+
+        </div>
+        <div>
+            <label for="messages">Messages</label>
+            <textarea name="messages" id="messages" rows="4"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+    </body>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector(".container").classList.add("active");
+    });
+    </script>
+</html>

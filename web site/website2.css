@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.592);
+    overflow: hidden;
+    position: sticky; 
+    top: 0;
+     z-index: 1000px;
+     
+    
+    
+}
+
+.logo{
+    color: white;
+}
+
+.logo h1{
+    margin: 0;
+    font-size: 25px;
+}
+
+.navbar-links{
+    display: flex;
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover{
+    color: yellow;
+}
+
+
+.main-content{
+    background: url(https://wallpaperaccess.com/full/1658350.jpg) center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.content-overlay{
+    text-align: center;
+    color: red;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.805);
+}
+
+.content-overlay h2{
+    font-size: bold;
+}
+
+.content-overlay p{
+    margin-top: 10px;
+}
+
+
+.get-started{
+    background-color: rgba(0, 0, 0, 0.941);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.get-started:hover{
+    background-color: yellow;
+    color: blue;
+}
+
+
+
+
+
+
+h2{
+    text-align: center;
+}
+.image{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.services-card{
+    position: relative ;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.112);
+    transition: box-shadow 0.3s ease;
+
+}
+
+.services-card:hover{
+    /* box shadow manu arora */
+    box-shadow: 0 20px 50px rgba(240, 46, 169, 0.977);
+}
+
+.services-container{
+  display:flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    margin: 10px;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color:rgba(0, 0, 255, 0.634);
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s ease;
+}
+
+.services-card:hover .overlay{
+    height: 100%;
+}
+
+
+
+.text{
+    color: white;
+    font-size: 15px;
+    position:absolute ;
+    top:30% ;
+    text-align: center;
+}
+
+
+
+.testimonials-cards{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+
+
+.testimonials-line{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+
+}
+
+.testimonials-card img{
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+    border-radius: 30%;
+    border-radius: 50%;
+    
+}
+
+.testimonials-card{
+    width: 35% !important;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    /* box shadow css generator */
+    box-shadow: -3px 1px 14px 13px rgba(255,0,0,0.62);
+
+margin: 20px;
+display: flex;
+transition: box-shadow 0.4s ease;
+cursor: pointer;
+
+}
+
+.testimonial-card:hover{
+    box-shadow: 0 8px 15px rgb(0, 0, 0);
+}
+
+
+.testimonials-content{
+    flex-grow: 1;
+    /* allows the content to expand with in the flex container*/
+}
+
+.testimonials-card h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.testimonials-card p{
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+.contact-container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 8px;
+}
+
+input,textarea{
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+button:hover{
+    background-color:green;
+}

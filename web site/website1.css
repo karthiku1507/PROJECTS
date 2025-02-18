@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+ 
+.navbar{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.775);
+    overflow: hidden;
+    position: sticky;
+    justify-content: space-between;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 20px;
+    
+}
+
+.logo{
+   
+    color: white;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navbar-links{
+    display: flex;
+
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover{
+    color: yellow;
+}
+
+
+
+.main-content{
+    height: 100vh;
+    background: url(https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg) center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.content-overlay{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.378);
+}
+
+.content-overlay h2{
+    font-weight: bold;
+}
+
+.content-overlay p{
+    margin-top: 10px;
+}
+
+.get-started{
+     background-color: #333;
+     color: white;
+     padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.get-started:hover{
+    background-color: rgba(0, 0, 0, 0.588);
+    color: blue;
+}
