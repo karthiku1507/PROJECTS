@@ -1,0 +1,23 @@
+{
+  "name": "chattdude-backend",
+  "version": "1.0.0",
+  "description": "building api's for chat-dude-app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "karthik",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.15.0",
+    "nodemon": "^3.1.9",
+    "react-redux": "^9.2.0",
+    "redux": "^5.0.1",
+    "redux-logger": "^3.0.6",
+    "socket.io": "^4.8.1"
+  }
+}

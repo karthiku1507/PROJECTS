@@ -1,0 +1,8 @@
+.sidebar{
+     /* background-color: yellowgreen; */
+     /* padding: 50px; */
+     display: grid;
+     grid-template-rows: 10% 90%;
+     /* margin-bottom:85px ; */
+     height: 98vh;
+}

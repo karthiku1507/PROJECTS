@@ -1,0 +1,47 @@
+.header{
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    font-family: inherit;
+}
+.header .brand {
+    /* background-color: yellowgreen; */
+    width: 250px;
+   
+    margin-left: 30px;
+}
+.header .brand i {
+  /* font-style: italic; font style main */
+  font-style: normal;
+    font-size: 35px;
+    font-weight: bold;
+}
+   
+    
+/* }
+.header .brand i{
+    font-style: normal;
+    font-size: 35px;
+} */
+.header .options {
+    /* background-color: red; */
+    width: 350px;
+    display: flex;
+    margin-right: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header .options img {
+    border-radius: 50%;
+}
+.header .options i {
+    font-size: 27px;
+    color:green;
+    
+}
+
+.header .options i:hover{
+    color: red;
+}
