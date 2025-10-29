@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>document</title>
+        <style>
+            body {
+                width: 100%;
+                height: 100vh;
+                font-family: sans-serif;
+
+            }
+            .container {
+                width: 300px;
+                background: linear-gradient(135deg,#00feba,#5b545b);
+               padding: 25px;
+               border-radius: 10px;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+            }
+
+            .box1 {
+                color: white;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                font-size: 28px;
+                align-items: center;
+                font-weight: 600;
+                margin-top: 20px;
+                margin-bottom: 35px;
+            }
+            .box img {
+                width: 30px;
+                height: 30px;
+            }
+            .box1 img {
+                width: 120px;
+            }
+            .box {
+                margin-right: 80px;
+                display: flex;
+                align-items: center;
+                color: white;
+                gap: 15px;
+                margin-bottom: 10px;
+            }
+            .weather {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+            }
+            .textInput {
+                width: 200px;
+                height: 30px;
+                padding: 5px;
+                border: none;
+                border-radius: 5px;
+            }
+            .search {
+                width: 25px;
+                height: 25px;
+                background-color: white;
+                padding: 7px;
+                border-radius: 5px;
+                transition: all 0.2 ease;
+            }
+            .search:active {
+                transform: scale(0.9);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="weather">
+                <input type="text" name="" id="textInput" placeholder="Enter your city" class="textInput">
+                <img class="search" onclick=" getWeather()" src="/search.png" alt="">
+            </div>
+            <div class="searchResult" id="searchResult">
+                
+        </div>
+        <div>
+            <script>
+              async function getWeather() {
+                  const city = document.getElementById("textInput").value;
+                const apikey="092d1cf28f59a29503370e8f734ea8b0";
+
+                if(!city) {
+                document.getElementById("searchResult").innerHTML=`<p>please enter city name </p>`;
+                return;
+                }
+                const weatherURL=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`
+
+                try{
+                    const response=await fetch(weatherURL)
+                    const data = await response.json();
+                    if(data.cod!==200){
+                        document.getElementById("searchResult").innerHTML = `<p>${data.message}</p>`;
+                    }
+                    const iconcode=data.weather[0].icon;
+                    const iconURL=`https://openweathermap.org/img/wn/${iconcode}@2x.png`;
+
+                    document.getElementById("searchResult").innerHTML=`<div class="box1">
+                    <img src="${iconURL}" alt="${data.weather[0].description}">
+                    <span>${data.name}</span>
+                </div>
+                <div class="box">
+                    <img src="/temp1.png" alt="">
+                    <span>Temperature:${data.main.temp}</span>
+                </div>
+                <div class="box">
+                    <img src="/wind1.png" alt="">
+                    <span>wind speed: ${data.wind.speed}</span>
+                </div>
+                <div class="box">
+                    <img src="/weather1.png" alt="">
+                    <span>weather: ${data.weather[0].description}</span>
+                </div>`
+                }catch(error){
+                     document.getElementById("searchResult").innerHTML = `<p>error fetching data.</p>`;
+                };
+                
+              }
+                
+            </script>
+        </div>
+    </body>
